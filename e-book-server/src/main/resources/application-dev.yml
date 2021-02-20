@@ -1,0 +1,24 @@
+server:
+  port: 9999
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/db_ebook?serverTimezone=GMT%2B8&useSSL=false&useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.jdbc.Driver
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/ebook
+  mail:
+    host: smtp.qq.com
+    username: 910744380@qq.com
+    password: ncyeszkogyfebbbe
+    properties.mail.smtp:
+      auth: true
+      starttls:
+        enable: true
+        required: true
+
+mybatis:
+  mapper-locations: classpath:/mapper/*Mapper.xml
